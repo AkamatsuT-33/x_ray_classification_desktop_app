@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    
+<p>このファイルをアップロードしますか？</p>
+<p>{{name}}</p>
+<dev class="row">
+    <dev class="col-sm-5"></dev>
+    <dev class="col-sm-1">
+        <button type=“button” class="btn btn-secondary btn-lg" onclick="location.href='/x_ray_app/complete'">Yes</button>
+    </dev>
+    <dev class="col-sm-1">
+        <button type=“button” class="btn btn-secondary btn-lg" onclick="location.href='/x_ray_app'">No</button>
+    </dev>
+    <dev class="col-sm-5"></dev>
+</dev>
+
+{% endblock %}

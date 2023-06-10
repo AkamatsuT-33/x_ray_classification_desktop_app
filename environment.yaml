@@ -1,0 +1,11 @@
+name: x_ray_app
+channels:
+  - defaults
+dependencies:
+  - colorama=0.4.6
+  - flask=2.2.2
+  - numpy=1.24.3
+  - pillow=9.4.0
+  - python=3.9.16
+  - pytorch=1.12.1
+  - torchvision=0.13.1

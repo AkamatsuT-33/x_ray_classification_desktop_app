@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<img src="{{ url_for('static', filename='images/sample.png')}}" >
+
+<p>{{img_name}}</p>
+
+<p>{{ans}}の可能性があります。</p>
+
+<button class="btn btn-secondary btn-lg" onclick="location.href='/x_ray_app'">アプリトップへ戻る</button>
+<button class="btn btn-secondary btn-lg" onclick="location.href='/'">ホームへ戻る</button>
+
+{% endblock %}

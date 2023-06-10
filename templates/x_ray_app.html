@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<label>画像をファイルを選んでください。</label>
+<form action="{{url_for('x_ray_post')}}" method="POST" enctype="multipart/form-data">
+<dev class="form-group">
+    <dev class="custom-file">
+        <dev class="row">
+            <dev class="col-sm-2"></dev>
+            <dev class="col-sm-8">
+                <input type="file" class="custom-file-input btn btn-secondary btn-lg" id="input_image" name="image" required>
+                <label class="custom-file-label" for="input_image">画像ファイルを選択</label>
+            </dev>
+            <dev class="col-sm-2"></dev>
+        </dev>
+        <hr/>
+        <button type="submit" onclick="location.href='/x_ray_app/ask_upload'" class="btn btn-secondary btn-lg">アップロード</button>
+        <button type="button" onclick="location.href='/'" class="btn btn-secondary btn-lg">戻る</button>
+    </dev>
+    
+
+</dev>
+
+</form>
+
+
+<p>{{flag}}</p>
+
+{% endblock %}

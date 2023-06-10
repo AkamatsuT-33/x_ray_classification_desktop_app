@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<img class="resizeimage" src="{{ url_for('static', filename='images/sample.png')}}">
+
+<p>{{name}}</p>
+
+<button class="btn btn-secondary btn-lg" onclick="location.href='/x_ray_app/recognized_check'">分類予測する</button>
+{% endblock %}
