@@ -6,7 +6,7 @@ let mainWindow;
 const subpy = null
 
 st_app.on('ready', function() {
-  global.subpy = require('child_process').spawn('python',['./resources/app/app.py']);
+  global.subpy = require('child_process').spawn('python',['app.py']);
   let URL = 'http://localhost:5000';
 
   let openWindow = function() {
